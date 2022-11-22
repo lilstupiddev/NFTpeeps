@@ -429,7 +429,8 @@ div.c{
   margin-right:10px;
 }
 .c input:checked ~ h1 ~ div.p{
-  max-height:100px;
+  max-height:220px;
+  line-height: 140%;
 }
 .c a{
   color:steelblue;
@@ -716,7 +717,7 @@ div.c{
         max-width: 80%;
     }
     .team-block img{
-        transform: scale(0.9);
+        transform: scale(0.8);
     }
     .collection-titles{
         margin-top: -50px;
@@ -731,11 +732,28 @@ div.c{
         transform: scale(0.6);
         margin-top: 10px;
     }
-}
-
-@media(max-width:400px){
-    .roadmap-block{
-        transform: scale(0.65);
-        margin: auto;
+    .links-footer{
+        flex-direction: column;
+    }
+    .links-footer a:not(:last-child){
+        margin-right: 0px;
+    }
+    .roadmap-block img{
+        transform: scale(0);
+    }
+    .roadmap-block-text p{
+        font-size: 20px;
+        max-width: 100%;
+        margin-top: 10px;
+        line-height: 120%;
     } 
+    .roadmap-block{
+        margin-bottom: -60px;
+    }
+    .roadmap-titles h1,h2{
+        margin-bottom: 0;
+    }
+    .roadmap-titles h1{
+        margin-bottom: -50px;
+    }
 }
