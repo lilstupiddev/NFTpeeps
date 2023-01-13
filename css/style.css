@@ -9,6 +9,7 @@
     background-color:blue;
 }
 
+
 body::-webkit-scrollbar {
     width: 0.5em;
   } 
@@ -21,8 +22,11 @@ body::-webkit-scrollbar {
     background-color: #F7859C;
   }
 
+
 body{
     font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 .container{
@@ -315,7 +319,6 @@ body{
 
 
 
-
 .team-titles{
     margin-top: 100px;
     margin-bottom: 50px;
@@ -525,7 +528,7 @@ div.c{
 
 @media (max-width:1150px){
     .container{
-        max-width: 800px;
+        max-width: 90%;
         margin: auto;
     }
     .collection-titles{
@@ -653,8 +656,7 @@ div.c{
         margin: auto;
     } 
     .container{
-        max-width: 90%;
-        margin: auto;
+        width:80%;
     }
 
 
@@ -758,7 +760,12 @@ div.c{
     }
 }
 
-/* @media(max-width:1200px){
-.collection-text-part p, .exc-titles h1, .content-block, .p, .footer h1, .content-block{
-    border-bottom:none;
-}} */
+@media(max-width:1000px){
+.roadmap{
+    display: none;
+
+}
+.roadmap-titles{
+    display: none;
+}
+}
