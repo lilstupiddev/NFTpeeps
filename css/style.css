@@ -3,9 +3,6 @@
     scroll-behavior: smooth;
     box-sizing: border-box;
 }
-body{
-    overflow-x: hidden;
-}
 
 ::selection{
     color:orangered;
@@ -523,8 +520,8 @@ div.c{
     #roadmap-block-6{
         background: url(../img/100.png)  no-repeat left;
     }
-}
 
+}
 
 @media (max-width:1150px){
     .container{
@@ -540,6 +537,7 @@ div.c{
         flex-direction: column;
         align-items:center
     }
+
 
     .collection .collection-img{
         max-width: 90%;
@@ -596,7 +594,7 @@ div.c{
 
 @media(max-width:1000px){
     .container{
-        max-width: 600px;
+        max-width: 90%;
         margin: auto;
     }
     .team{
@@ -647,13 +645,15 @@ div.c{
     }
 }
 
+
+
 @media (max-width:600px){
     .roadmap-block{
         transform: scale(0.8);
         margin: auto;
     } 
     .container{
-        max-width: 500px;
+        max-width: 90%;
         margin: auto;
     }
 
@@ -757,3 +757,8 @@ div.c{
         margin-bottom: -50px;
     }
 }
+
+/* @media(max-width:1200px){
+.collection-text-part p, .exc-titles h1, .content-block, .p, .footer h1, .content-block{
+    border-bottom:none;
+}} */
